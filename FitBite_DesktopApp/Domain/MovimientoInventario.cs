@@ -4,11 +4,18 @@ using System.Text;
 
 namespace FitBite_DesktopApp.Domain
 {
+
+    public enum Tipos
+    {
+        Entrada,
+        Salida
+    }
+
     public class MovimientoInventario
     {
         public int Id { get; set; }
-        public string? Tipo { get; set; } // entrada o salida
-        public double Cantidad { get; set; }
+        public Tipos Tipo { get; set; } // entrada o salida
+        public int Cantidad { get; set; }
         public string? Motivo { get; set; }
         public DateTime Fecha { get; set; } 
 
