@@ -6,9 +6,22 @@ namespace FitBite_DesktopApp.Domain
 {
     public class Venta
     {
+        public enum MetodoPago
+        {
+            Efectivo,
+            Tarjeta,
+            Transferencia,
+            Fiado  //XD
+
+        }
+
+
+
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
         public decimal Total { get; set; }
+        public MetodoPago MetodoPagoVenta { get; set; } = MetodoPago.Efectivo;
+
         public bool Anulada { get; set; } = false;
 
         public List<DetallesVenta> detalleVenta { get; set; } = new List<DetallesVenta>();

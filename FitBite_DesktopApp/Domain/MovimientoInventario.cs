@@ -15,7 +15,7 @@ namespace FitBite_DesktopApp.Domain
     {
         public int Id { get; set; }
         public TiposMovimientoInventario Tipo { get; set; } // entrada o salida
-        public int Cantidad { get; set; }
+        public decimal Cantidad { get; set; }
         public string? Motivo { get; set; }
         public DateTime Fecha { get; set; } 
 

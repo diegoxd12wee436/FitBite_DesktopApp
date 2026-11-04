@@ -8,7 +8,7 @@ namespace FitBite_DesktopApp.Domain
     {
         public int Id { get; set; }
         public decimal PrecioUnitario { get; set; }
-        public int Cantidad { get; set; }
+        public decimal Cantidad { get; set; }
         public decimal SubTotal { get; set; }
 
         //la relacion de quien es osea a que venta pertece

@@ -10,8 +10,8 @@ namespace FitBite_DesktopApp.Domain
         public string? Nombre { get; set; }
         public decimal CostoUnitario { get; set; }
         public decimal PrecioVenta { get; set; } // el precio por el cual es vendido
-        public int StockActual { get; set; }
-        public int StockMinimo { get; set; }
+        public decimal StockActual { get; set; }
+        public decimal StockMinimo { get; set; }
         public bool Activo { get; set; } = true;
 
         //unidad de medida solo para productos que sean insumos 
