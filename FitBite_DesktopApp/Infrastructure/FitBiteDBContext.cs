@@ -21,8 +21,16 @@ namespace FitBite_DesktopApp.Infrastructure
 
             string dbPath = Path.Combine(appPath, "fitbite.db");
 
+            
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            
         
+        }
+
+        //ahora la configracion para que los decimal sean dobles
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Properties<decimal>().HaveConversion<double>();
         }
 
             
