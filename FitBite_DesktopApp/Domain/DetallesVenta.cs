@@ -14,7 +14,7 @@ namespace FitBite_DesktopApp.Domain
         //la relacion de quien es osea a que venta pertece
 
         public int VentaId { get; set; }
-        public Venta? venta { get; set; }
+        public Venta? Venta { get; set; }
 
         public int ProductoId { get; set; }
         public Productos? Productos { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 namespace FitBite_DesktopApp.Domain
 {
 
-    public enum Tipos
+    public enum TiposMovimientoInventario
     {
         Entrada,
         Salida
@@ -14,7 +14,7 @@ namespace FitBite_DesktopApp.Domain
     public class MovimientoInventario
     {
         public int Id { get; set; }
-        public Tipos Tipo { get; set; } // entrada o salida
+        public TiposMovimientoInventario Tipo { get; set; } // entrada o salida
         public int Cantidad { get; set; }
         public string? Motivo { get; set; }
         public DateTime Fecha { get; set; } 
